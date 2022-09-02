@@ -1,0 +1,46 @@
+.header {
+position: sticky;
+top: 0;
+padding: 1rem 0;
+max-width:calc(1136px + 2rem); 
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+background-color: var(--background);
+z-index: 1;
+}
+
+.header .logo {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.header .logo span {
+    color: var(--primary);
+}
+
+.header nav a {
+    color: var(--link);
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.2s ;
+}
+
+.header nav a + a {
+    margin-left: 1rem;
+}
+
+.header nav a:hover {
+    color: var(--primary);
+}
+
+@media screen and (max-width: 768px) {
+    .header{
+       justify-content: center;
+    }
+
+    .header nav {
+        display: none;
+    }
+}

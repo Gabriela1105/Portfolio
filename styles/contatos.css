@@ -1,0 +1,43 @@
+.contatos{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.contatos .button{
+    position: relative;
+}
+
+.contatos .button img{
+    position: absolute;
+    left: 1rem;
+}
+
+.button.whatsapp{
+    background-color: #25D366;
+}
+
+.button.linkedin{
+    background-color: #0E76A8;
+
+}
+
+.button.github{
+    background-color: #171515;
+
+}
+
+.button.email{
+    background-color: #EA4335;
+
+}
+@media screen and (max-width: 975px){
+    .contatos {
+        grid-template-columns:repeat(2, 1fr);
+}
+}
+@media screen and (max-width: 500px){
+    .contatos {
+        grid-template-columns:1fr;
+    }
+}
